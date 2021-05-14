@@ -15,6 +15,7 @@ class MainActivity : AppCompatActivity() {
     }
 
     private fun iniciaViews() {
-        TODO("Not yet implemented")
+        //atribuindo valor ao rvList
+        rvList = findViewById(R.id.rv_list)
     }
 }
