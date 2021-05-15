@@ -2,6 +2,7 @@ package com.deyvsonaguiar.telabank
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import androidx.recyclerview.widget.GridLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 
 class MainActivity : AppCompatActivity() {
@@ -21,6 +22,8 @@ class MainActivity : AppCompatActivity() {
         rvList = findViewById(R.id.rv_list)
         //inicialização do adapter
         rvList.adapter = adapter
+        //criando um layout em Grid com 2 colunas
+        rvList.layoutManager = GridLayoutManager(this, 2)
     }
 
     //criando lista mock de dados para o RecyclerView

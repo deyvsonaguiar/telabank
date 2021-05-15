@@ -14,7 +14,7 @@ class MenuItemAdapter: RecyclerView.Adapter<MenuItemAdapter.MenuItemAdapterViewH
     //método que inicializa novo ViewHolder e a Vieew, sem preencher o conteúdo, pois n tem dados ainda
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): MenuItemAdapterViewHolder {
         val view = LayoutInflater.from(parent.context)
-                .inflate(R.layout.activity_main, parent, false)
+                .inflate(R.layout.item_menu, parent, false)
         return MenuItemAdapterViewHolder(view)
     }
 
@@ -29,7 +29,7 @@ class MenuItemAdapter: RecyclerView.Adapter<MenuItemAdapter.MenuItemAdapterViewH
     }
 
     //método para ao chamar a lista de forma dinâmica, limpá-la e atualizar as novidades e não duplique ou adicione itens a mais
-    fun setItensList(lista: List<MenuItemModel>) {
+    fun setItensList(list: List<MenuItemModel>) {
         this.list.clear()
         this.list.addAll(list)
     }
